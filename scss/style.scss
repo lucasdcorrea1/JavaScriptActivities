@@ -1,0 +1,134 @@
+//COLORS
+$bg: #87d7d4;
+$bg-on: #ffb3b3;
+$el: #fff;
+$el-on: #ff707b;
+$label: #43a3a0;
+
+//RESET STYLES
+html, 
+body{
+  margin: 0;
+  height: 100%;
+}
+
+//CONTAINER
+.center-el{
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+//CHECKBOX
+input[type="checkbox"]{
+  display:none;
+  
+  & + svg{
+    fill: $el;
+    height: 50px;
+    margin-right: 150px;
+  }
+  
+  & + svg + label{
+    width: 130px;
+    height: 55px;
+    background: $label;
+    display: inline-block;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+    
+    &:before{
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+      display: block;
+      width:40px;
+      height: 40px;
+      background: $el;
+      border-radius: 30px;
+      animation: bounceOut 0.5s linear;
+      left: 10px;
+    }
+  }
+  
+  & + svg + label + div{
+    background: $bg;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+  
+  & + svg + label span{
+    font-size: 18pt;
+    color: $el;
+    position: absolute;
+    font-family: 'Fredoka One', cursive;
+    top: 50%;
+    
+    &:first-child{
+      left: -30px;
+      transform: translate(-100%, -50%);
+    }
+    
+    &:last-child{
+      right: -30px;
+      transform: translate(100%, -50%);
+    }
+  }
+  
+  
+  &:checked{
+    & + svg{
+      fill: $el-on;
+      animation: beating 1s infinite;
+    }
+    
+    & + svg + label{
+      background: $el-on;
+      
+      &:before{
+        animation: bounce 0.5s linear;
+        left: calc(100% - 50px);
+      }
+      
+      & + div{
+        background: $bg-on;
+      }
+    }
+  }
+}
+
+//ANIMATION
+@keyframes beating{
+  0%{ transform: scale(1); -webkit-transform: scale(1); }
+  40%{ transform: scale(1); -webkit-transform: scale(1); }
+  50%{ transform: scale(1.2); -webkit-transform: scale(1.2); }
+  60%{ transform: scale(1); -webkit-transform: scale(1); }
+  70%{ transform: scale(1.2); -webkit-transform: scale(1.2); }
+  80%{ transform: scale(1); -webkit-transform: scale(1); }
+  90%{ transform: scale(1.2); -webkit-transform: scale(1.2); }
+  100%{ transform: scale(1); -webkit-transform: scale(1); }
+}
+
+
+@keyframes bounce{
+  0%{ left: 10px;}
+  80%{ left: calc(100% - 50px);}
+  90%{ left: calc(100% - 60px);}
+  100%{ left: calc(100% - 50px);}
+}
+
+@keyframes bounceOut{
+  0%{ left: calc(100% - 50px);}
+  80%{ left: 10px;}
+  90%{ left: 20px;}
+  100%{ left: 10px;}
+}
