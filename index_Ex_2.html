@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<link href="img/cerberus.png" rel="icon">
+
+<head>
+    <title>Ex02</title>
+
+    <link rel="stylesheet" href="css/Aula1.css">
+    <link rel="stylesheet"  href="css/demo.css">
+    <link rel="stylesheet" href="css/footer-distributed-with-address-and-phones.css">
+    <!--Bootsrap 4 CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <!--Fontawesome CDN-->
+    
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body id="body">
+        <a onclick="openNav()">
+                <img class="menulogo" src="./img/menu.png" />
+            </a>
+            <div class="wrapper">
+                    <!-- Sidebar Holder -->
+                    <nav id="sidebar">
+                        <div class="sidebar-header">
+                           <h3 onclick=" closeNav()">Atividades 2019</h3>
+                        </div>
+        
+                        <ul class="list-unstyled components">
+                            <p>Linguagem de Programação</p>
+                            <li class="active">
+                                <a href="index_Ex_1.html" data-toggle="collapse" aria-expanded="false">Exercício 1</a>
+                                <ul class="collapse list-unstyled" id="homeSubmenu">
+                                    <li><a href="#">Home 1</a></li>
+                                    <li><a href="#">Home 2</a></li>
+                                    <li><a href="#">Home 3</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="index_Ex_2.html">Exercício 2</a>
+                                <a href="index_Ex_3.html" data-toggle="collapse" aria-expanded="false">Exercício 3</a>
+                                <ul class="collapse list-unstyled" id="pageSubmenu">
+                                    <li><a href="#">Page 1</a></li>
+                                    <li><a href="#">Page 2</a></li>
+                                    <li><a href="#">Page 3</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="index_Ex_4.html">Exercício 4</a>
+                            </li>
+                            <li>
+                                <a href="index_Ex_Calc.html">Calculadora</a>
+                            </li>
+                        </ul>
+        
+                        <ul class="list-unstyled CTAs">
+                            <li><a href="https://github.com/lucasdcorrea1/lucasdcorrea1.github.io.git" class="download">Download source</a></li>
+                            <li><a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a></li>
+                        </ul>
+                    </nav>
+        
+                    <!-- Page Content Holder -->
+                    
+                </div>
+    <div id="container" class="container">
+          
+        <div class="d-flex justify-content-center h-100">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Exercício 2</h3>
+                    <div class="d-flex justify-content-end social_icon">
+                        <a href="https://github.com/lucasdcorrea1" target="_blank" ><span><img src="img/linktocat.png" class="logogit"/></span></a>
+
+                    </div>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-calendar"></i></span>
+                            </div>
+                            <input type="text" id="ano" class="form-control" placeholder="Informe Um Ano" onkeyup="somenteNumeros(this);" maxlength="4" type="text"  ng-model="numero.valor">
+                        </div>
+                        <div aling="center" class="form-group">
+                            <button type="button" id="botao" onclick="ano_bissexto()" class="btn btn-outline-warning float-right login_btn"><i class="fas fa-calendar"></i></button>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer">
+
+                    <div class="d-flex justify-content-center links" ><a id="Viu">
+                        Seu resultado Vai aparecer aqui!!!
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <a href="#" style="color:#ffc312;" id="ResultEx2"></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer id="main3" class="footer-distributed">
+
+        <div class="footer-left">
+
+            <h3><img src="img/cerberuss.png" style="max-width:15%"/></h3>
+
+            <p class="footer-links">
+                <a href="index_Ex_Calc.html">Calculadora</a>
+                ·
+                <a href="index_Ex_1.html">Ex1</a>
+                ·
+                <a href="index_Ex_2.html">Ex2</a>
+                ·
+                <a href="index_Ex_3.html">Ex3</a>
+                ·
+                <a href="index_Ex_4.html">Ex4</a>
+            </p>
+
+            <p class="footer-company-name">Cerberus &copy; 2019</p>
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span></span> Brasil, Franca-SP</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+55 (16)99461-6318</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="lucas.dcorrea1@gmail.com">lucas.dcorrea1@gmail.com</a></p>
+            </div>
+
+        </div>
+
+
+
+    </footer>
+
+</body>
+<script type="text/javascript" language="javascript" src="js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="js/aula1.js"></script>
+
+
+
+</html>
