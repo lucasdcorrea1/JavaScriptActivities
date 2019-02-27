@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<link href="img/cerberus.png" rel="icon">
+<link href="../img/cerberus.png" rel="icon">
 
 <head>
     <title>Ex04</title>
 
-    <link rel="stylesheet" href="css/Aula1.css">
-    <link rel="stylesheet"  href="css/demo.css">
-    <link rel="stylesheet" href="css/footer-distributed-with-address-and-phones.css">
+    <link rel="stylesheet" href="../css/Aula1.css">
+    <link rel="stylesheet"  href="../css/demo.css">
+    <link rel="stylesheet" href="../css/footer-distributed-with-address-and-phones.css">
     <!--Bootsrap 4 CDN-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
@@ -18,7 +18,7 @@
 
 <body id="body">
         <a onclick="openNav()">
-                <img class="menulogo" src="./img/menu.png" />
+                <img class="menulogo" src="../img/menu.png" />
             </a>
             <div class="wrapper">
                     <!-- Sidebar Holder -->
@@ -29,7 +29,10 @@
         
                         <ul class="list-unstyled components">
                             <p>Linguagem de Programação</p>
-                            <li class="active">
+                            <li>
+                                <a href="/index.html">Home</a>
+                            </li>
+                            <li>
                                 <a href="index_Ex_1.html" data-toggle="collapse" aria-expanded="false">Exercício 1</a>
                                 <ul class="collapse list-unstyled" id="homeSubmenu">
                                     <li><a href="#">Home 1</a></li>
@@ -46,7 +49,7 @@
                                     <li><a href="#">Page 3</a></li>
                                 </ul>
                             </li>
-                            <li>
+                            <li  class="active">
                                 <a href="index_Ex_4.html">Exercício 4</a>
                             </li>
                             <li>
@@ -71,7 +74,7 @@
                     <h3>Exercício 4</h3>
                     <div class="d-flex justify-content-end social_icon">
                         <!-- <a href="https://www.facebook.com/lucas.damas.35" target="_blank" ><span><i class="fab fa-facebook-square"></i></span></a> -->
-                        <a href="https://github.com/lucasdcorrea1" target="_blank" ><span><img src="img/github-octocat-vector-png--896.png" class="logogit"/></span></a>
+                        <a href="https://github.com/lucasdcorrea1" target="_blank" ><span><img src="../img/github-octocat-vector-png--896.png" class="logogit"/></span></a>
                         <!-- <a href="https://www.instagram.com/lucas_damas_/?hl=pt-br" target="_blank" ><span><i class="fab fa-instagram"></i></a> -->
                     </div>
                 </div>
@@ -119,7 +122,7 @@
 
         <div class="footer-left">
 
-            <h3><img src="img/cerberuss.png" style="max-width:15%"/></h3>
+            <h3><img src="../img/cerberuss.png" style="max-width:15%"/></h3>
 
             <p class="footer-links">
                 <a href="index_Ex_Calc.html">Calculadora</a>
@@ -160,8 +163,8 @@
     </footer>
 
 </body>
-<script type="text/javascript" language="javascript" src="js/jquery-1.3.2.min.js"></script>
-<script type="text/javascript" src="js/aula1.js"></script>
+<script type="text/javascript" language="javascript" src="../js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="../js/aula1.js"></script>
 
 <script>
 $("#divnota").hide();
