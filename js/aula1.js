@@ -1,19 +1,8 @@
 $(document).ready(function () {
-  document.getElementById("sidebar").style = "display:none";
+
 
 });
 
-function closeNav() {
-  document.getElementById("sidebar").style = "display:none";
-  document.getElementById("container").style.marginLeft = "100px";
-  document.getElementById("main3").style.marginLeft = "0";
-}
-
-function openNav() {
-  document.getElementById("sidebar").style = "258px";
-  document.getElementById("container").style.marginLeft = "220px";
-  document.getElementById("main3").style.marginLeft = "225px";
-};
 function calculadora() {
   let Result
   let number1 = parseFloat($('#number1').val());
