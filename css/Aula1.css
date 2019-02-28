@@ -44,6 +44,7 @@ html {
 html,body{
 background-image: url('/img/Lucas.jpg');
 background-size: cover;
+background-color: #05061b;
 background-repeat: no-repeat;
 height: 100%;
 font-family: 'Numans', sans-serif;
