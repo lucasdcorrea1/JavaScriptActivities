@@ -1,3 +1,5 @@
 
-<a href="https://lucasdcorrea1.github.io/" target="_blank" class="btn btn-outline-warning float-right login_btn">Clik</a>
+<a href="https://lucasdcorrea1.github.io/"> <button type="button" class="btn btn-info">
+       Clik
+                    </button></a>
 <span><img src="img/openSource.png" /></span>
