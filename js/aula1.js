@@ -163,5 +163,9 @@ function rep_nota(){
             // aprovado (nota igual ou superior a 6) ou reprovado. Informe o
             // resultado ao usuário.
   let nota = parseFloat($('#nota').val());
+  if (nota >  10){
+    $("#ResultEx4").text('Informe uma nota válida')
+  }else{
   $("#ResultEx4").text(nota > 6 ? 'Aprovado' : 'Reprovado');
+  }
 };
