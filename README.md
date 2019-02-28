@@ -1,5 +1,4 @@
 
-<a href="https://lucasdcorrea1.github.io/"> <button type="button" class="btn btn-info">
-       Clik
-                    </button></a>
+
+<span>https://lucasdcorrea1.github.io</span>
 <span><img src="img/openSource.png" /></span>
