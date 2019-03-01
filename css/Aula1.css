@@ -49,13 +49,27 @@ background-repeat: no-repeat;
 height: 100%;
 font-family: 'Numans', sans-serif;
 } 
-#bodyhome {
-    background-image: url('/img/8d32df22e089f1d39f7c1b17fa270ec0.gif');
-background-size: cover;
-background-color: #05061b;
-background-repeat: no-repeat;
-height: 100%;
-font-family: 'Numans', sans-serif;
+.bodyhome {
+    /* Estilo padrão do ícone */
+    background-image: url('/img/abstract-1779605_1920.png');
+    background-size: cover;
+    background-color: #05061b;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Numans', sans-serif;
+}
+
+/* largura máxima de 768px */
+@media screen and (max-width: 768px) {
+    .bodyhome {
+        /* Estilo modificado do ícone */
+        background-image: url('/img/8d32df22e089f1d39f7c1b17fa270ec0.gif');
+        background-size: cover;
+        background-color: #05061b;
+        background-repeat: no-repeat;
+        height: 100%;
+        font-family: 'Numans', sans-serif;
+    }
 }
 .container{
 height: 100%;
