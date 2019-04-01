@@ -30,7 +30,9 @@
 </head>
 
 <body>
-
+        <div class="background-animation-container">
+                <div class="background-gradient"></div>
+              </div>
     <div class="wrapper">
         <!-- Sidebar  -->
         <nav id="sidebar">
@@ -44,28 +46,39 @@
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
-                            <a href="../index.html">Home Primeira Aula</a>
+                            <a href="#" onclick="ajax('../index.html')">Home Primeira Aula</a>
                         </li>
                     </ul>
                 </li>
+
                 <li>
                     <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"
                         class="dropdown-toggle">Exercícios</a>
                     <ul class="collapse list-unstyled" id="pageSubmenu">
                         <li>
-                            <a href="index_Ex_1.html">Exercício 1</a>
+                            <a href="#ex_1">Exercício 1</a>
                         </li>
                         <li>
-                            <a href="index_Ex_2.html">Exercício 2</a>
+                            <a href="#ex_2">Exercício 2</a>
                         </li>
                         <li>
-                            <a href="index_Ex_3.html">Exercício 3</a>
+                            <a href="#ex_3">Exercício 3</a>
                         </li>
                         <li>
-                            <a href="index_Ex_4.html">Exercício 4</a>
+                            <a href="#ex_4">Exercício 4</a>
                         </li>
                         <li>
-                            <a href="index_Ex_Calc.html">Calculadora</a>
+                            <a href="#ex_calc">Calculadora</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false"
+                        class="dropdown-toggle">Exercícios</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu2">
+                        <li>
+                            <a href="#" onclick="ajax('Ex_vet1.html')">Ex 9</a>
+                            
                         </li>
                     </ul>
                 </li>
@@ -84,12 +97,13 @@
 
 
 
-            <button type="button" id="sidebarCollapse" class="btn btn-info">
+            <button type="button" style="position: fixed;" id="sidebarCollapse" class="btn btn-info">
                 <i class="fas fa-align-left"></i>
             
             </button>
             
-
+                <!-- ex 1 inicio -->
+                <div id="ex_1"></div>
             <div id="container" class="container">
 
                 <div class="d-flex justify-content-center h-100">
@@ -113,7 +127,7 @@
                                 </div>
                                 <div aling="center" class="form-group">
                                     <button type="button" id="botao" onclick="impar_par()"
-                                        class="btn btn-outline-warning float-right login_btn">=</button>
+                                        class="btn btnwarning">=</button>
                                 </div>
                             </form>
                         </div>
@@ -123,14 +137,233 @@
                                     Seu resultado Vai aparecer aqui!!!
                             </div>
                             <div class="d-flex justify-content-center">
-                                <a href="#" style="color:#ffc312;" id="ResultEx1"></a>
+                                <a  id="ResultEx1" href="#" class="result"></a>
                             </div>
                         </div>
                     </div>
 
                 </div>
             </div>
+            <!-- fim ex 1 -->
+              <!-- Ex2   -->
+              <div id="ex_2"></div>
+              <div id="container" class="container">
+
+                <div class="d-flex justify-content-center h-100">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Exercício 2</h3>
+                            <div style="max-width: 84%;" class="d-flex justify-content-end social_icon">
+                                <a href="https://github.com/lucasdcorrea1" target="_blank"><span><img
+                                            src="../img/linktocat.png" class="logogit" /></span></a>
+
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="input-group form-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fas fa-calendar"></i></span>
+                                    </div>
+                                    <input type="text" id="ano" class="form-control" placeholder="Informe Um Ano"
+                                        onkeyup="somenteNumeros(this);" maxlength="4" type="text"
+                                        ng-model="numero.valor">
+                                </div>
+                                <div aling="center" class="form-group">
+                                    <button type="button" id="botao" onclick="ano_bissexto()"
+                                        class="btn btnwarning"><i
+                                            class="fas fa-calendar"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="card-footer">
+
+                            <div class="d-flex justify-content-center links"><a id="Viu">
+                                    Seu resultado Vai aparecer aqui!!!
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <a href="#" class="result" id="ResultEx2"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Ex 2 fim  -->
+                        <!-- Ex 3 inicio  -->
+                        <div id="ex_3"></div>
+                        <div id="container" class="container">
+
+                            <div class="d-flex justify-content-center h-100">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3>Exercício 3</h3>
+                                        <div style="max-width: 84%;" class="d-flex justify-content-end social_icon">
+                                            <a  href="https://github.com/lucasdcorrea1" target="_blank"><span><img
+                                                        src="../img/heisencat.png" class="logogit" /></span></a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <form>
+                                            <div class="input-group form-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text"><i class="fas fa-calendar"></i></span>
+                                                </div>
+                                                <select value="selects" id="mes" placeholder="Informe Um mes" class="form-control">
+                                                    <option value="0">Janeiro</option>
+                                                    <option value="1">Fevereiro</option>
+                                                    <option value="2">Março</option>
+                                                    <option value="3">Abril</option>
+                                                    <option value="4">Maio</option>
+                                                    <option value="5">Junho</option>
+                                                    <option value="6">Julho</option>
+                                                    <option value="7">Agosto</option>
+                                                    <option value="8">Setembro</option>
+                                                    <option value="9">Outubro</option>
+                                                    <option value="10">Novembro</option>
+                                                    <option value="11">Dezembro</option>
+                                                </select>
+                                            </div>
+                                            <div aling="center" class="form-group">
+                                                <button type="button" id="botao" onclick="BuscaMes()"
+                                                    class="btn btnwarning"><i
+                                                        class="fas fa-calendar"></i></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="card-footer">
             
+                                        <div class="d-flex justify-content-center links"><a id="Viu">
+                                                Seu resultado Vai aparecer aqui!!!
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="#" class="result" id="ResultEx3"></a>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                            </div>
+                        </div>
+                        <!-- Ex 3 fim  -->
+                          <!--Ex 4 inoicio  -->
+                          <div id="ex_4"></div>
+            <div id="container" class="container">
+
+                <div class="d-flex justify-content-center h-100">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Exercício 4</h3>
+                            <div style="max-width: 84%;" class="d-flex justify-content-end social_icon">
+                                <!-- <a href="https://www.facebook.com/lucas.damas.35" target="_blank" ><span><i class="fab fa-facebook-square"></i></span></a> -->
+                                <a href="https://github.com/lucasdcorrea1" target="_blank"><span><img
+                                            src="../img/github-octocat-vector-png--896.png"
+                                            class="logogit" /></span></a>
+                                <!-- <a href="https://www.instagram.com/lucas_damas_/?hl=pt-br" target="_blank" ><span><i class="fab fa-instagram"></i></a> -->
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div id="divnumber1" class="input-group form-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fas fa-sort-numeric-down"></i></span>
+                                    </div>
+                                    <input type="text" id="number10" class="form-control"
+                                        placeholder="Informe o primeiro número" onkeyup="somenteNumeros(this);"
+                                        maxlength="5" type="text" ng-model="numero.valor">
+                                </div>
+                                <div id="divnumber2" class="input-group form-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fas fa-sort-numeric-up"></i></span>
+                                    </div>
+                                    <input type="text" id="number20" class="form-control" onkeyup="somenteNumeros(this);"
+                                        maxlength="5" placeholder="Informe o segundo número">
+                                </div>
+                                <div id="divnota" class="input-group form-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fab fa-audible"></i></span>
+                                    </div>
+                                    <input type="text" id="nota" class="form-control" maxlength="2"
+                                        placeholder="Informe Sua nota">
+                                </div>
+
+                                <div aling="center" class="form-group">
+                                    <button type="button" id="botao1" onclick="numeros_diferentes()"
+                                        class="btn btnwarning">=</button>
+                                    <button type="button" id="botao2" onclick="rep_nota()"
+                                        class="btn btnwarning"><i
+                                            class="fas fa-biohazard"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="card-footer">
+
+                            <div class="d-flex justify-content-center links"><a id="Viu">
+                                    Seu resultado Vai aparecer aqui!!!
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <a href="#" class="result" id="ResultEx4"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Ex 4 fim  -->
+            <!-- calculadora 1 inicio  -->
+            <div id="ex_calc"></div>
+            <div id="container" class="container">
+
+                <div class="d-flex justify-content-center h-100">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Calculadora</h3>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="input-group form-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fab fa-artstation"></i></span>
+                                    </div>
+                                    <input type="text" id="number1" class="form-control"
+                                        placeholder="Informe o primeiro número" onkeyup="somenteNumeros(this);"
+                                        maxlength="5" type="text" ng-model="numero.valor">
+                                </div>
+                                <div class="input-group form-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fab fa-artstation"></i></span>
+                                    </div>
+                                    <input type="text" id="number2" class="form-control" onkeyup="somenteNumeros(this);"
+                                        maxlength="5" placeholder="Informe o segundo número">
+                                </div>
+                                <div class="input-group form-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><img src="../img/calculator.png"
+                                                style="max-width:95%" /></span>
+                                    </div>
+                                    <input type="text" id="operation" class="form-control" maxlength="1"
+                                        placeholder="Informe a operação">
+                                </div>
+    
+                                <div aling="center" class="form-group">
+                                    <button type="button" id="botao" onclick="calculadora()"
+                                        class="btn btnwarning">=</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="card-footer">
+    
+                            <div class="d-flex justify-content-center links"><a id="Viu">
+                                    Seu resultado Vai aparecer aqui!!!
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <a href="#" style="color:#ffc312 !important;" id="Result"></a>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        <!-- Calculadora 1 fim  -->
             <!-- Page Content  -->
         </div>
     </div>

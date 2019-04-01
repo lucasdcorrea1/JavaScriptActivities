@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="../img/cerberus.png" rel="icon">
     <title>Exercício</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
         integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -39,42 +40,31 @@
             </div>
 
             <ul class="list-unstyled components">
-                <p>Exercício 4</p>
+                <p>Exercício 1</p>
                 <li class="active">
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
                             <a href="../index.html">Home Primeira Aula</a>
                         </li>
+                        <li>
+                            <a href="../index.html">For</a>
+                        </li>
                     </ul>
                 </li>
-
                 <li>
                     <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"
                         class="dropdown-toggle">Exercícios</a>
                     <ul class="collapse list-unstyled" id="pageSubmenu">
-                        <li>
-                            <a href="index_Ex_1.html">Exercício 1</a>
-                        </li>
-                        <li>
-                            <a href="index_Ex_2.html">Exercício 2</a>
-                        </li>
-                        <li>
-                            <a href="index_Ex_3.html">Exercício 3</a>
-                        </li>
-                        <li>
-                            <a href="index_Ex_.4html">Exercício 4</a>
-                        </li>
-                        <li>
-                            <a href="index_Ex_Calc.html">Calculadora</a>
-                        </li>
+
                     </ul>
                 </li>
             </ul>
 
             <ul class="list-unstyled CTAs">
                 <li>
-                    <a href="https://github.com/lucasdcorrea1/lucasdcorrea1.github.io" class="download">Download source</a>
+                    <a href="https://github.com/lucasdcorrea1/lucasdcorrea1.github.io" class="download">Download
+                        source</a>
                 </li>
 
             </ul>
@@ -87,55 +77,30 @@
 
             <button type="button" id="sidebarCollapse" class="btn btn-info">
                 <i class="fas fa-align-left"></i>
-              
+
             </button>
-           
+
+
             <div id="container" class="container">
 
-                <div class="d-flex justify-content-center h-100">
+                <div class="d-flex justify-content-center links h-100">
                     <div class="card">
                         <div class="card-header">
-                            <h3>Exercício 4</h3>
+                            <h3>Exercício 1</h3>
                             <div style="max-width: 84%;" class="d-flex justify-content-end social_icon">
-                                <!-- <a href="https://www.facebook.com/lucas.damas.35" target="_blank" ><span><i class="fab fa-facebook-square"></i></span></a> -->
                                 <a href="https://github.com/lucasdcorrea1" target="_blank"><span><img
-                                            src="../img/github-octocat-vector-png--896.png"
-                                            class="logogit" /></span></a>
-                                <!-- <a href="https://www.instagram.com/lucas_damas_/?hl=pt-br" target="_blank" ><span><i class="fab fa-instagram"></i></a> -->
+                                            src="../img/ironcat.png" class="logogit" /></span></a>
                             </div>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body card_test">
                             <form>
-                                <div id="divnumber1" class="input-group form-group">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text"><i class="fas fa-sort-numeric-down"></i></span>
-                                    </div>
-                                    <input type="text" id="number1" class="form-control"
-                                        placeholder="Informe o primeiro número" onkeyup="somenteNumeros(this);"
-                                        maxlength="5" type="text" ng-model="numero.valor">
-                                </div>
-                                <div id="divnumber2" class="input-group form-group">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text"><i class="fas fa-sort-numeric-up"></i></span>
-                                    </div>
-                                    <input type="text" id="number2" class="form-control" onkeyup="somenteNumeros(this);"
-                                        maxlength="5" placeholder="Informe o segundo número">
-                                </div>
-                                <div id="divnota" class="input-group form-group">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text"><i class="fab fa-audible"></i></span>
-                                    </div>
-                                    <input type="text" id="nota" class="form-control" maxlength="2"
-                                        placeholder="Informe Sua nota">
-                                </div>
+                                <div class="input-group form-group">
 
-                                <div aling="center" class="form-group">
-                                    <button type="button" id="botao1" onclick="numeros_diferentes()"
-                                        class="btn btn-outline-warning float-right login_btn">=</button>
-                                    <button type="button" id="botao2" onclick="rep_nota()"
-                                        class="btn btn-outline-warning float-right login_btn"><i
-                                            class="fas fa-biohazard"></i></button>
-                                </div>
+                                    <div ></div>
+                                    <div aling="center" class="form-group">
+                                        <button type="button" id="botao" onclick="loopfor()"
+                                            class="btn btn-outline-warning float-right login_btn">=</button>
+                                    </div>
                             </form>
                         </div>
                         <div class="card-footer">
@@ -144,15 +109,15 @@
                                     Seu resultado Vai aparecer aqui!!!
                             </div>
                             <div class="d-flex justify-content-center">
-                                <a href="#" style="color:#ffc312;" id="ResultEx4"></a>
+                                <a href="#" style="color:#ffc312;" id="loop"></a>
                             </div>
                         </div>
                     </div>
 
                 </div>
             </div>
-            <!-- Page Content  -->
 
+            <!-- Page Content  -->
         </div>
     </div>
 
@@ -176,8 +141,6 @@
 
 <script type="text/javascript">
     $(document).ready(function () {
-        $("#divnota").hide();
-$("#botao2").hide();
         $("#sidebar").mCustomScrollbar({
             theme: "minimal"
         });

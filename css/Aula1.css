@@ -1,3 +1,4 @@
+
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -9,14 +10,14 @@ html {
  html::-webkit-scrollbar-track
  {
      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-     background-color: #F5F5F5;
+     background-color:#1f292f;
      border-radius: 10px;
  }
  
  html::-webkit-scrollbar
  {
      width: 10px;
-     background-color: #F5F5F5;
+     background-color: #1f292f;
  }
  
  html::-webkit-scrollbar-thumb
@@ -25,11 +26,52 @@ html {
      background-image: -webkit-gradient(linear,
                                         left bottom,
                                         left top,
-                                        color-stop(0.44, rgb(97, 10, 26)),
-                                        color-stop(0.72, rgb(52, 16, 57)),
-                                        color-stop(0.86, rgb(6, 5, 23)));
+                                        color-stop(0.44, rgb(8, 21, 37)), 
+                                        color-stop(0.72, rgb(30, 37, 58)), 
+                                        color-stop(0.86, rgb(31, 40, 60)));
  }
- 
+ .btn-info {
+    color: #f9f9fa;
+    background-color: #202d3f;
+    border-color: #081525;
+}
+.btn-info:hover {
+    color: #f9f9fa;
+    background-color: #081525;
+    border-color: #202d3f;
+}
+ .btnwarning{
+     background: #081525;
+     border: none;
+     color: #202D3F;
+     border-color: #00D9A3;
+     border-radius: 10px;
+     width: 25%;
+     height: 35px;
+     transition: 0.6s;
+ }
+ .btnwarning1:focus{
+    border: none;
+    
+}
+
+.btnwarning:hover{
+    background: #0E1E2E;
+    width: 28%;
+    height: 40px;
+    transition: 0.6s;
+}
+
+.result,
+.a{
+color: #b50808 ;
+}
+.resulta, 
+a:hover, 
+a:focus {
+color:#ffbf0c;
+}
+
 
 .textcolor{
     position: relative;
@@ -37,26 +79,6 @@ html {
     left: 300px;
     
     /* color: aqua; */
-}
-/* Made with love by Mutiullah Samim*/
-
-
-html,body{
-background-image: url('/img/Lucas.jpg');
-background-size: cover;
-background-color: #05061b;
-background-repeat: no-repeat;
-height: 100%;
-font-family: 'Numans', sans-serif;
-} 
-.bodyhome {
-    /* Estilo padrão do ícone */
-    background-image: url('/img/abstract-1779605_1920.png');
-    background-size: cover;
-    background-color: #05061b;
-    background-repeat: no-repeat;
-    height: 100%;
-    font-family: 'Numans', sans-serif;
 }
 
 /* largura máxima de 768px */
@@ -76,6 +98,9 @@ height: 100%;
 margin-top: 50px;
 align-content: center;
 }
+.card_test {
+    background-color: #05061b
+}
 .logogit {
     position: relative;
     left: 71%;
@@ -90,16 +115,16 @@ background-color: rgba(0,0,0,0.5) !important;
 }
 .card-footer {
     padding: .75rem 1.25rem;
-    background-color: #310518 !important;
+    background-color: #1d263b !important;
     border-top: 1px solid rgba(0,0,0,.125);
 }
 .social_icon span{
 font-size: 60px;
 margin-left: 10px;
-color: #FFC312;
+color: #202D3F;
 }
 .test{
-    background-color: #FFC312;
+    background-color: #202D3F;
 }
 .social_icon span:hover{
 color: white;
@@ -118,7 +143,7 @@ top: -45px;
 
 .input-group-prepend span{
 width: 50px;
-background-color: #FFC312;
+background-color: #202D3F;
 color: black;
 border:0 !important;
 }
@@ -143,7 +168,7 @@ margin-right: 5px;
 
 .login_btn{
 color: black;
-background-color: #FFC312;
+background-color: #202D3F;
 width: 100px;
 }
 

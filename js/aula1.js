@@ -1,10 +1,55 @@
 $(document).ready(function () {
 
+  $("#divnota").hide();
+  console.log('test')
+  $("#botao2").hide();
 
 });
+function loopfor() {
+  let number = 5;
+  let result;
+  let calc = ""
+  for (let i = 1; i < 11; i++) {
+    result = (number + "X" + i + "="+ i * number + "<hr>")
+    calc = `${calc}'  ${result}`
+    document.getElementById("loop").innerHTML  = calc;
+ }
+
+};
+function ex1Array() {
+  let linha1 = [];
+  linha1.push('Santa Teresinha', 
+    'Estação', 
+    'Centro', 
+    'Jardim Limas', 
+    'Aeroporto');
+};
+
+function vetor() {
+  let vet1 = Array();
+  let vet2 = [];
+  let vet3 = Array(44, 'banana', true, "Fruta")
+  let vet4 = [44, 'banana', true, "Fruta"]
+  let vet4t = [44, 'banana', true, "Fruta"]
+  console.log(vet4);
+  vet4.push("test");
+  console.log("Push" + "   " +vet4t);
+
+  let retiraUltimo = vet4.pop();
+  console.log(retiraUltimo);
+
+  let retiraPrimeiro = vet4.shift();
+
+  let colocaNoMeio = vet4.splice(2, 0, "Banana", "Prata")
+
+  console.log("Vetro final"  + "   " + vet4);
+  console.log("splice" + "   " + colocaNoMeio);
+  console.log("shift"  + "   " + retiraPrimeiro);
+  console.log("pop" + "   " + retiraUltimo);
+}
 
 function calculadora() {
-  let Result
+  let result
   let number1 = parseFloat($('#number1').val());
   let number2 = parseFloat($('#number2').val());
   let op = $('#operation').val();
@@ -16,27 +61,27 @@ function calculadora() {
       }else{
         switch(op){
           case '+':
-            Result = (+number1 + number2);
+            result = (+number1 + number2);
           break
           case '-':
             if(number1 < number2){
-              Result = (number2 - number1);
+              result = (number2 - number1);
             }else{
-              Result = (number1 - number2);
+              result = (number1 - number2);
             };
           break
           case '*':
-            Result = (number1 * number2);
+            result = (number1 * number2);
           break
           case '/':
             if(number2 === 0){
               alert('Número invalido tente novamente')
             }else{
-            Result = (number1 / number2);
+            result = (number1 / number2);
             };
           break
         };
-        $("#Result").text(Result);
+        $("#Result").text(result);
       };
 };
 
@@ -55,9 +100,9 @@ function batata() {
 };
 
 function somenteNumeros(num) {
-  var er = /[^0-9.]/;
+  let er = /[^0-9.]/;
   er.lastIndex = 0;
-  var campo = num;
+  let campo = num;
   if (er.test(campo.value)) {
     campo.value = "";
   }
@@ -136,9 +181,9 @@ function BuscaMes(){
 };
 
 function hide_show(){
-  let number1 = parseFloat($('#number1').val());
-  let number2 = parseFloat($('#number2').val());
-  let numero_maior = number1 > number2 ? 'Maior Número: ' + number1 : 'Maior Número: ' + number2 ;
+  let number10 = parseFloat($('#number10').val());
+  let number20 = parseFloat($('#number2').val());
+  let numero_maior = number10 > number20 ? 'Maior Número: ' + number10 : 'Maior Número: ' + number20 ;
   $("#ResultEx4").text(numero_maior);
   $("#divnumber1").hide();
   $("#divnumber2").hide();
@@ -152,9 +197,9 @@ function numeros_diferentes(){
             // os dois números sejam iguais.
             // Utilize o operador ternário para determinar qual dos
             // dois números é maior e informe ao usuário.
-  let number1 = parseFloat($('#number1').val());
-  let number2 = parseFloat($('#number2').val());
-    $("#ResultEx4").text(number1 === number2 ? 'Informe números diferentes' : hide_show());
+  let number10 = parseFloat($('#number10').val());
+  let number20 = parseFloat($('#number20').val());
+    $("#ResultEx4").text(number10 === number20 ? 'Informe números diferentes' : hide_show());
 };
 
 function rep_nota(){
@@ -168,4 +213,15 @@ function rep_nota(){
   }else{
   $("#ResultEx4").text(nota > 6 ? 'Aprovado' : 'Reprovado');
   }
+};
+
+function ajax(x) {
+			$("body").show().html("<div class='loader'>"+
+			"<div class='inner one'></div>"+
+			"<div class='inner two'></div>"+
+			"<div class='inner three'></div>"+
+		  "</div>");
+			setTimeout(function(){
+				window.location = x;
+			}, 700);
 };
