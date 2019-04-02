@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  
 
   $("#divnota").hide();
   console.log('test')

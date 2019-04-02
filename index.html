@@ -31,6 +31,7 @@
 </head>
 
 <body class="bodyhome">
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
     <div class="background-animation-container">
         <div class="background-gradient"></div>
       </div>
@@ -79,14 +80,13 @@
                 <i class="fas fa-align-left"></i>
             </button>
             <!-- body -->
-            <center>
-                <h1>
-                    <a href="Exemplos/index_Ex_1.html">
-                        Atividades de javascript </br>
-                        Primeira aula
-                    </a>
-                </h1>
-            </center>
+            <div class="container">
+                <div class="data">
+                  Aulas de javascript!
+                </div>
+                <div class="quote">
+                        Atividades 2019
+                </div>
             <!-- body -->
 </body>
 
@@ -108,6 +108,21 @@
 
 <script type="text/javascript">
     $(document).ready(function () {
+        const text = baffle('.data');
+text.set({
+  characters : 'zpxzVpasdfh86136░█▒ ░░░█▓ >░░ ▓/▒█▓ █ █>█▒sayg▒ ░░░█▓ >yf',
+  speed: 150
+});
+text.start();
+text.reveal(50000);
+
+const text1 = baffle('.quote');
+text1.set({
+  characters : 'qwertyuiopasdfgh8613611888',
+  speed: 140
+});
+text1.start();
+text1.reveal(5500);
         $("#sidebar").mCustomScrollbar({
             theme: "minimal"
         });
