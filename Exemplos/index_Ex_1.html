@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="../img/cerberus.png" rel="icon">
     <title>Exercício</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
         integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -30,9 +31,9 @@
 </head>
 
 <body>
-        <div class="background-animation-container">
-                <div class="background-gradient"></div>
-              </div>
+    <div class="background-animation-container">
+        <div class="background-gradient"></div>
+    </div>
     <div class="wrapper">
         <!-- Sidebar  -->
         <nav id="sidebar">
@@ -71,7 +72,7 @@
                             <a href="#ex_calc">Calculadora</a>
                         </li>
                         <li>
-                            <a href="#ex_4">Exercício 19</a>
+                            <a href="#ex_19">Exercício 19</a>
                         </li>
                     </ul>
                 </li>
@@ -81,7 +82,7 @@
                     <ul class="collapse list-unstyled" id="pageSubmenu2">
                         <li>
                             <a href="#" onclick="ajax('Ex_vet1.html')">Ex 9</a>
-                            
+
                         </li>
                     </ul>
                 </li>
@@ -89,7 +90,8 @@
 
             <ul class="list-unstyled CTAs">
                 <li>
-                    <a href="https://github.com/lucasdcorrea1/lucasdcorrea1.github.io" class="download">Download source</a>
+                    <a href="https://github.com/lucasdcorrea1/lucasdcorrea1.github.io" class="download">Download
+                        source</a>
                 </li>
 
             </ul>
@@ -102,11 +104,11 @@
 
             <button type="button" style="position: fixed;" id="sidebarCollapse" class="btn btn-info">
                 <i class="fas fa-align-left"></i>
-            
+
             </button>
-            
-                <!-- ex 1 inicio -->
-                <div id="ex_1"></div>
+
+            <!-- ex 1 inicio -->
+            <div id="ex_1"></div>
             <div id="container" class="container">
 
                 <div class="d-flex justify-content-center h-100">
@@ -140,7 +142,7 @@
                                     Seu resultado Vai aparecer aqui!!!
                             </div>
                             <div class="d-flex justify-content-center">
-                                <a  id="ResultEx1" href="#" class="result"></a>
+                                <a id="ResultEx1" href="#" class="result"></a>
                             </div>
                         </div>
                     </div>
@@ -148,9 +150,9 @@
                 </div>
             </div>
             <!-- fim ex 1 -->
-              <!-- Ex2   -->
-              <div id="ex_2"></div>
-              <div id="container" class="container">
+            <!-- Ex2   -->
+            <div id="ex_2"></div>
+            <div id="container" class="container">
 
                 <div class="d-flex justify-content-center h-100">
                     <div class="card">
@@ -173,8 +175,7 @@
                                         ng-model="numero.valor">
                                 </div>
                                 <div aling="center" class="form-group">
-                                    <button type="button" id="botao" onclick="ano_bissexto()"
-                                        class="btn btnwarning"><i
+                                    <button type="button" id="botao" onclick="ano_bissexto()" class="btn btnwarning"><i
                                             class="fas fa-calendar"></i></button>
                                 </div>
                             </form>
@@ -193,63 +194,62 @@
                 </div>
             </div>
             <!-- Ex 2 fim  -->
-                        <!-- Ex 3 inicio  -->
-                        <div id="ex_3"></div>
-                        <div id="container" class="container">
+            <!-- Ex 3 inicio  -->
+            <div id="ex_3"></div>
+            <div id="container" class="container">
 
-                            <div class="d-flex justify-content-center h-100">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h3>Exercício 3</h3>
-                                        <div style="max-width: 84%;" class="d-flex justify-content-end social_icon">
-                                            <a  href="https://github.com/lucasdcorrea1" target="_blank"><span><img
-                                                        src="../img/heisencat.png" class="logogit" /></span></a>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <form>
-                                            <div class="input-group form-group">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text"><i class="fas fa-calendar"></i></span>
-                                                </div>
-                                                <select value="selects" id="mes" placeholder="Informe Um mes" class="form-control">
-                                                    <option value="0">Janeiro</option>
-                                                    <option value="1">Fevereiro</option>
-                                                    <option value="2">Março</option>
-                                                    <option value="3">Abril</option>
-                                                    <option value="4">Maio</option>
-                                                    <option value="5">Junho</option>
-                                                    <option value="6">Julho</option>
-                                                    <option value="7">Agosto</option>
-                                                    <option value="8">Setembro</option>
-                                                    <option value="9">Outubro</option>
-                                                    <option value="10">Novembro</option>
-                                                    <option value="11">Dezembro</option>
-                                                </select>
-                                            </div>
-                                            <div aling="center" class="form-group">
-                                                <button type="button" id="botao" onclick="BuscaMes()"
-                                                    class="btn btnwarning"><i
-                                                        class="fas fa-calendar"></i></button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <div class="card-footer">
-            
-                                        <div class="d-flex justify-content-center links"><a id="Viu">
-                                                Seu resultado Vai aparecer aqui!!!
-                                        </div>
-                                        <div class="d-flex justify-content-center">
-                                            <a href="#" class="result" id="ResultEx3"></a>
-                                        </div>
-                                    </div>
-                                </div>
-            
+                <div class="d-flex justify-content-center h-100">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Exercício 3</h3>
+                            <div style="max-width: 84%;" class="d-flex justify-content-end social_icon">
+                                <a href="https://github.com/lucasdcorrea1" target="_blank"><span><img
+                                            src="../img/heisencat.png" class="logogit" /></span></a>
                             </div>
                         </div>
-                        <!-- Ex 3 fim  -->
-                          <!--Ex 4 inoicio  -->
-                          <div id="ex_4"></div>
+                        <div class="card-body">
+                            <form>
+                                <div class="input-group form-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fas fa-calendar"></i></span>
+                                    </div>
+                                    <select value="selects" id="mes" placeholder="Informe Um mes" class="form-control">
+                                        <option value="0">Janeiro</option>
+                                        <option value="1">Fevereiro</option>
+                                        <option value="2">Março</option>
+                                        <option value="3">Abril</option>
+                                        <option value="4">Maio</option>
+                                        <option value="5">Junho</option>
+                                        <option value="6">Julho</option>
+                                        <option value="7">Agosto</option>
+                                        <option value="8">Setembro</option>
+                                        <option value="9">Outubro</option>
+                                        <option value="10">Novembro</option>
+                                        <option value="11">Dezembro</option>
+                                    </select>
+                                </div>
+                                <div aling="center" class="form-group">
+                                    <button type="button" id="botao" onclick="BuscaMes()" class="btn btnwarning"><i
+                                            class="fas fa-calendar"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="card-footer">
+
+                            <div class="d-flex justify-content-center links"><a id="Viu">
+                                    Seu resultado Vai aparecer aqui!!!
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <a href="#" class="result" id="ResultEx3"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Ex 3 fim  -->
+            <!--Ex 4 inoicio  -->
+            <div id="ex_4"></div>
             <div id="container" class="container">
 
                 <div class="d-flex justify-content-center h-100">
@@ -278,8 +278,9 @@
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fas fa-sort-numeric-up"></i></span>
                                     </div>
-                                    <input type="text" id="number20" class="form-control" onkeyup="somenteNumeros(this);"
-                                        maxlength="5" placeholder="Informe o segundo número">
+                                    <input type="text" id="number20" class="form-control"
+                                        onkeyup="somenteNumeros(this);" maxlength="5"
+                                        placeholder="Informe o segundo número">
                                 </div>
                                 <div id="divnota" class="input-group form-group">
                                     <div class="input-group-prepend">
@@ -292,8 +293,7 @@
                                 <div aling="center" class="form-group">
                                     <button type="button" id="botao1" onclick="numeros_diferentes()"
                                         class="btn btnwarning">=</button>
-                                    <button type="button" id="botao2" onclick="rep_nota()"
-                                        class="btn btnwarning"><i
+                                    <button type="button" id="botao2" onclick="rep_nota()" class="btn btnwarning"><i
                                             class="fas fa-biohazard"></i></button>
                                 </div>
                             </form>
@@ -346,7 +346,7 @@
                                     <input type="text" id="operation" class="form-control" maxlength="1"
                                         placeholder="Informe a operação">
                                 </div>
-    
+
                                 <div aling="center" class="form-group">
                                     <button type="button" id="botao" onclick="calculadora()"
                                         class="btn btnwarning">=</button>
@@ -354,7 +354,7 @@
                             </form>
                         </div>
                         <div class="card-footer">
-    
+
                             <div class="d-flex justify-content-center links"><a id="Viu">
                                     Seu resultado Vai aparecer aqui!!!
                             </div>
@@ -363,56 +363,55 @@
                             </div>
                         </div>
                     </div>
-    
+
                 </div>
             </div>
-        <!-- Calculadora 1 fim  -->
-                        <!-- ex 19 inicio -->
-                        <div id="ex_19"></div>
-                        <div id="container" class="container">
-            
-                            <div class="d-flex justify-content-center h-100">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h3>Exercício 19</h3>
-                                        <div style="max-width: 84%;" class="d-flex justify-content-end social_icon">
-                                            <a href="https://github.com/lucasdcorrea1" target="_blank"><span><img
-                                                        src="../img/ironcat.png" class="logogit" /></span></a>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <form>
-                                            <div class="input-group form-group">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text"><i class="fab fa-artstation"></i></span>
-                                                </div>
-                                                <input type="text" id="txtNumero_texto" class="form-control"
-                                                    placeholder="Informe palavras e números"
-                                                     type="text">
-                                            </div>
-                                            <div aling="center" class="form-group">
-                                                <button type="button" id="botao" onclick="ex_split()"
-                                                    class="btn btnwarning">=</button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <div class="card-footer">
-            
-                                        <div class="d-flex justify-content-center links"><a id="Viu">
-                                                Seu resultado Vai aparecer aqui!!!
-                                        </div>
-                                        <div class="d-flex justify-content-center">
-                                            <a  id="resultEx19_1" href="#" class="result"></a>
-                                        </div>
-                                        <div class="d-flex justify-content-center">
-                                            <a  id="resultEx19_2" href="#" class="result"></a>
-                                        </div>
-                                    </div>
-                                </div>
-            
+            <!-- Calculadora 1 fim  -->
+            <!-- ex 19 inicio -->
+            <div id="ex_19"></div>
+            <div id="container" class="container">
+
+                <div class="d-flex justify-content-center h-100">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Exercício 19</h3>
+                            <div style="max-width: 84%;" class="d-flex justify-content-end social_icon">
+                                <a href="https://github.com/lucasdcorrea1" target="_blank"><span><img
+                                            src="../img/ironcat.png" class="logogit" /></span></a>
                             </div>
                         </div>
-                        <!-- fim ex 19 -->
+                        <div class="card-body">
+                            <form>
+                                <div class="input-group form-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fab fa-artstation"></i></span>
+                                    </div>
+                                    <input type="text" id="txtNumero_texto" class="form-control"
+                                        placeholder="Informe palavras e números" type="text">
+                                </div>
+                                <div aling="center" class="form-group">
+                                    <button type="button" id="botao" onclick="ex_split()"
+                                        class="btn btnwarning">=</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="card-footer">
+
+                            <div class="d-flex justify-content-center links"><a id="Viu">
+                                    Seu resultado Vai aparecer aqui!!!
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <a id="resultEx19_1" href="#" class="result"></a>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <a id="resultEx19_2" href="#" class="result"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- fim ex 19 -->
             <!-- Page Content  -->
         </div>
     </div>
