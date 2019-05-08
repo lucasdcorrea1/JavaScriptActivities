@@ -161,7 +161,6 @@ function ano_bissexto() {
     $("#ResultEx2").text(nou);
   };
  
-};
 
 function BuscaMes(){
   /* 
@@ -225,3 +224,58 @@ function ajax(x) {
 				window.location = x;
 			}, 700);
 };
+
+
+
+
+function ex_split(){
+   
+      /*
+
+         1) Solicite ao usuário que informe uma string. Essa string
+            deve conter palavras e números, separados entre si por espaços.
+
+         2) Converta a string em um vetor, utilizando split().
+
+         3) Declare dois vetores vazios, um para conter só as palavras
+            e outro para conter só os números.
+
+         4) Percorra o vetor resultante do split() e faça a separação entre
+            palavras e números, inserindo-os nos vetores apropriados. A
+            INSERÇÃO DEVE GARANTIR QUE CADA VETOR ESTEJA SEMPRE EM ORDEM
+            ASCENDENTE. Declare e implemente funções sempre que possível.
+
+         5) Converta os vetores de palavras e de números de volta em string,
+            separados por vírgula (,). Exiba as duas strings resultantes com
+            document.write().
+
+         6) Boa diversão!         
+
+      */
+let imputNtxt = $("#txtNumero_texto").val()
+let vet_txt = [];
+let vet_num = [];
+
+vet_txt.push(returnArrayTxt(imputNtxt));
+vet_num.push(returnArrayNum(imputNtxt));
+
+$("#resultEx19_1").text('Palavras: ' + vet_txt);
+$("#resultEx19_2").text('números: ' + vet_num );
+};
+
+function returnArrayTxt(test){
+  let txt;
+  txt = test.split(/\d+/);
+  return txt
+};
+
+function returnArrayNum(test){
+let Num;
+  Num = test.split('').filter(function(numbers){
+    if($.isNumeric(numbers)){
+      return(numbers);
+    }  
+  });
+  return Num 
+};
+
