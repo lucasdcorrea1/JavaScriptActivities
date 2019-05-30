@@ -223,7 +223,7 @@ function ajax(x) {
     "</div>");
   setTimeout(function () {
     window.location = x;
-  }, 700);
+  }, 900);
 };
 
 
@@ -280,3 +280,24 @@ function returnArrayNum(test) {
   return Num
 };
 
+function whileEx5(){
+   /*
+
+            Imprima na página todos os números múltiplos de 17 ou
+            de 29 entre 1 e 1000. Utilize while.
+         
+         */
+        let result;
+        let n = 1;
+        let calc = "Múltiplos de 17: ";
+        while (n <= 1000) {
+           if(n % 17 == 0 || n % 29 == 0) {
+            result = (n)
+            
+            calc = `${calc}'  ${result}`
+            $("#resultEx5").text(calc);
+           }
+           n++;
+        }
+       
+}
