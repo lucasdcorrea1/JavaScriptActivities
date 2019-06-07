@@ -225,3 +225,28 @@ function ajax(x) {
 				window.location = x;
 			}, 700);
 };
+
+
+function aula22(){
+        /*
+         
+         * Declare e inicialize um vetor vazio.
+         * Declare um loop eterno.
+         * Dentro do loop eterno, declare e inicialize um objeto vazio
+         * Peça ao usuário para informar um nome. Se o usuário deixar 
+            em branco o nome, interrompa o loop eterno.
+         * Caso contrário, peça também idade e salário. Essas três
+            informações (nome, idade e salário) devem ser salvas em
+            propriedades do objeto anteriormente declarado.
+         * Acrescente o objeto ao vetor.
+         * Fora do loop eterno, mostre as seguintes informações:
+           - Soma dos salários de todos os funcionários informados
+           - Média dos salários de todos os funcionários informados
+           - Média da idade de todos os funcionários informados
+
+      */
+  var ObVet = [];
+for(;;){
+  
+}
+}
